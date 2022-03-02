@@ -147,3 +147,14 @@ p {
 .user-name a:hover {
   color: hsl(178, 100%, 50%);
 }
+
+
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
