@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 18px;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  width: 100%;
+  max-width: 320px;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 1.5rem 0rem 1rem rgba(13, 22, 37, 0.9);
+}
+
+.card-title {
+  margin: 1.5rem;
+  font-size: 2.5rem;
+  transition: 0.3s;
+}
+
+.card-title a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 2rem;
+}
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.view {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 99%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  border-radius: 1rem;
+}
+
+.view:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.icon {
+  width: 5rem;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.main {
+  color: hsl(215, 51%, 70%);
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.1rem solid var(--line);
+}
+
+.info div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+
+.info img {
+  height: 2rem;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.ethereum {
+  color: hsl(178, 100%, 50%);
+}
+
+.clock {
+  color: hsl(215, 51%, 70%);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+
+.user-info img {
+  height: 4rem;
+  width: auto;
+  border: solid 0.2rem hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.user-name {
+  color: hsl(215, 51%, 70%);
+}
+
+.user-name a {
+  color: hsl(0, 0%, 100%);
+  transition: 0.3s;
+}
+
+.user-name a:hover {
+  color: hsl(178, 100%, 50%);
+}
